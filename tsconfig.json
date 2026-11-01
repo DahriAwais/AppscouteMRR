@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "types": ["chrome"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@core/*": ["../packages/core/src/*"]
+    }
+  },
+  "include": [
+    "src",
+    "vite.shared.ts",
+    "vite.config.content.ts",
+    "vite.config.background.ts",
+    "vite.config.mellowtel.ts",
+    "vite.config.pages.ts"
+  ],
+  "exclude": ["src/**/*.test.ts"]
+}
